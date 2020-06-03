@@ -57,7 +57,7 @@ input:focus {
   border-radius: 2px;
   padding: 20px 10px;
   margin: 15px auto;
-  width: 65%;
+  width: 90%;
   position: relative;
   text-align: center;
   display: flex;
@@ -183,7 +183,7 @@ hr {
   font-size: 0.8em;
   margin: 2% 0;
   padding: 5px 15px;
-  width: 86%;
+  width: 87%;
 }
 
 .closeButton {
