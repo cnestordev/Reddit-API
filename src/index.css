@@ -54,6 +54,7 @@ input:focus {
   margin: 15px auto;
   width: 65%;
   position: relative;
+  text-align: center;
 }
 
 .subreddit {

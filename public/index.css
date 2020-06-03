@@ -59,6 +59,9 @@ input:focus {
   margin: 15px auto;
   width: 65%;
   position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .subreddit {
@@ -170,6 +173,7 @@ hr {
 
 .fade {
   opacity: 0.6;
+  align-self: center;
 }
 
 .comment {
@@ -177,8 +181,9 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   font-size: 0.8em;
-  margin: 10px auto;
+  margin: 2% 0;
   padding: 5px 15px;
+  width: 86%;
 }
 
 .closeButton {
@@ -187,7 +192,6 @@ hr {
   font-size: 1.8em;
   color: #ed422f;
   position: relative;
-  right: -42%;
 }
 
 .closeButton:hover {
