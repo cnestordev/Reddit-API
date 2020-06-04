@@ -43,7 +43,6 @@ class App extends React.Component {
     })();
   }
 
-
   handleChange(event) {
     this.setState({
       search: event.target.value,
@@ -127,6 +126,7 @@ class App extends React.Component {
             comments={item.data.num_comments}
             url={item.data.permalink}
             whitelist={item.data.whitelist_status}
+            link={item.data.permalink}
           />
         );
       });

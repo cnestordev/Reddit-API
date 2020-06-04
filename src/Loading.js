@@ -2,7 +2,7 @@ import React from 'react';
 
 function Loading() {
      return (
-        <div className="cont">
+        <div className="cont loadingPost">
             <div className="placeholderSubreddit">
                 <img className="subredditImage fade" src="https://i.imgur.com/nc3A21r.gif" />
             </div>

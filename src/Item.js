@@ -64,6 +64,13 @@ class Item extends React.Component {
             if (this.state.data[1].data.children.length === 0) {
                 return (
                     <div className="cont">
+                        <div className="subreddit">
+                            <p><i className="fab fa-reddit"></i>{this.props.subreddit}</p>
+                        </div>
+                        <h2>{this.props.title}</h2>
+                        <h3>{this.props.author}</h3>
+                        <hr />
+                        <img className={"mainImg " + imgClass} src={imgUrl} />
                         <h4>No comments on this post</h4>
                         <button className="closeButton" onClick={this.handleClose}><i className="far fa-times-circle"></i></button>
                     </div>
@@ -94,7 +101,7 @@ class Item extends React.Component {
                     <hr />
                     <img className={"mainImg " + imgClass} src={imgUrl} />
                     {commentData}
-                    <button className="closeButton" onClick={this.handleClose}><i className="far fa-times-circle"></i></button>
+                    <button className="closeButton" onClick={this.handleClose}><i class="fas fa-times"></i></button>
                 </div>
             )
         }
@@ -117,9 +124,11 @@ class Item extends React.Component {
             totalComments = this.props.comments; // if value < 1000, nothing to do
         }
         //***************************************************************************** */
-
+        //permalink for reddit post
+        console.log(this.props.link)
+        const link = "https://www.reddit.com" + this.props.link
         return (
-            <div className="cont">
+            <div className="cont cont-loaded">
                 <div className="subreddit">
                     <p><i className="fab fa-reddit"></i>{this.props.subreddit}</p>
                 </div>
@@ -136,6 +145,9 @@ class Item extends React.Component {
                         <img className="socialIcon" src="https://c7.uihere.com/icons/467/1007/799/bubble-chat-3c67b0dbe2d2bf7167a7189c0380b4b4.png" />
                         <p>{totalComments}</p>
                     </span>
+                </div>
+                <div class="externalLink">
+                    <a href={link} target="_blank"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         )

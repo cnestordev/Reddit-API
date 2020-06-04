@@ -64,6 +64,10 @@ input:focus {
   flex-direction: column;
 }
 
+.cont-loaded {
+  margin-
+}
+
 .subreddit {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
@@ -181,23 +185,29 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   font-size: 0.8em;
-  margin: 2% 0;
+  margin: 2% 0 2% 2%;
   padding: 5px 15px;
-  width: 87%;
+  width: 85%;
+  text-align: left;
+  padding-left: 3%;
 }
 
 .closeButton {
-  background: transparent;
-  border: none;
-  font-size: 1.8em;
-  color: #ed422f;
-  position: relative;
+    background: transparent;
+    border: 2px solid #ed422f;
+    display: inline-block;
+    font-size: 1.8em;
+    color: #ed422f;
+    position: relative;
+    padding: 1%;
+    width: 40%;
+    margin: 3% auto;
 }
 
 .closeButton:hover {
-  background: transparent;
-  border: none;
-  color: #ce2512;
+  background: #ed422f;
+  color: #fff;
+  transition: 200ms;
 }
 
 .likeSpan {
@@ -210,6 +220,18 @@ hr {
   color: #ff6868;
   margin-right: 2px;
   font-size: 0.9em;
+}
+
+.externalLink {
+  text-align: left;
+  margin-left: 5%;
+  color: rgba(255, 86, 0, 1);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.externalLink a:visited {
+  color: rgba(255, 86, 0, 1);
 }
 
 .authorComment {
@@ -226,11 +248,14 @@ hr {
   text-align: center;
 }
 
+.loadingPost > img {
+  margin-bottom: 5%;
+}
+
 .commentPh {
   display: block;
-  margin: auto;
   border-radius: 5px;
-  width: 90%;
+  width: 85%;
   margin-bottom: 7px;
 }
 
@@ -241,6 +266,7 @@ hr {
 
   .socialIcon {
     width: 26px;
+    margin-bottom: 2%;
   }
 
   .social p {

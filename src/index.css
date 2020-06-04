@@ -172,6 +172,8 @@ hr {
   font-size: 0.8em;
   margin: 10px auto;
   padding: 15px 15px;
+  text-align: left;
+  padding-left: 3%;
 }
 
 .closeButton {
